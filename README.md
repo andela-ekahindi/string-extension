@@ -1,10 +1,19 @@
 # string-extension
 Extending String Class - Checkpoint 2
 ##Introduction
-This is to extend the Inbuilt String Class in Javascript to to neat tricks. 
+This is to extend the Inbuilt String Class in Javascript to to neat tricks.
+
 These include:
-1. Checks if the string has vowels.
-2. 
+
+1.Checks if the string has vowels.
+2.Gives you an UpperCase representation of a string.
+3.Gives you a LowerCase representation of a string.
+4.Gives you a string with the first character in UpperCase.
+5.Checks if the string is a question.(ends with a question mark).
+6.Gives you a list of the words in the string as an array.
+7.Gives you the number of words in the string.
+8.Gives you the currency representation of the string passed.
+9.Gives a number after passing the string representation.
 ##
 
 ##Usage
