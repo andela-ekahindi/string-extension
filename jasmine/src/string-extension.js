@@ -30,7 +30,7 @@ String.prototype.ucFirst = function() {
 String.prototype.isQuestion = function() {
   //Return true if the string is a question (ending with a question mark).
 
-  return /\?$/.test(this);
+  return /\?$/.test(this); 
 };
 
 String.prototype.words = function() {
@@ -55,6 +55,5 @@ String.prototype.toCurrency = function() {
 
 String.prototype.fromCurrency = function() {
   //Returns a number representation of the Currency String e.g 11,111.11 should return 11111.11
-
-  return this.replace(/\,/g, '');
+  return Number(this.replace(/\,/g, ''));
 };

@@ -64,7 +64,7 @@ describe('String Extension', function() {
 
   describe('From Currency', function() {
     it('should return a number representation of the Currency String.', function() {
-      expect('11,111.11'.fromCurrency()).toEqual('11111.11');
+      expect('11,111.11'.fromCurrency()).toEqual(11111.11);
     });
   });
 });
