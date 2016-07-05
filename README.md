@@ -27,7 +27,7 @@ These include:
 These methods donot take in any arguements.The methods for the extended string Class are:
 
 
-#####1. hasVowels()
+#####1. hasVowels( )
 It returns true if the string contains vowels and false if doesnot.
 
 ######Example
