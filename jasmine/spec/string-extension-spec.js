@@ -5,6 +5,8 @@ describe('String Extension', function() {
     it('should return true if the string contains vowels', function() {
       expect('hi'.hasVowels()).toBeTruthy();
       expect('HI'.hasVowels()).toBeTruthy();
+      expect(''.hasVowels()).toBeFalsy();
+      expect('?'.hasVowels()).toBeFalsy();
     });
   });
 
@@ -12,6 +14,8 @@ describe('String Extension', function() {
     it('should return the string passed as all upper cases characters.', function() {
       expect('hi'.toUpper()).toEqual('HI');
       expect('HI'.toUpper()).toEqual('HI');
+      expect(''.toUpper()).toEqual('');
+      expect('?'.toUpper()).toEqual('?');
     });
   });
 
@@ -19,6 +23,7 @@ describe('String Extension', function() {
     it('should return the string passed as all lower cases characters.', function() {
       expect('HI'.toLower()).toEqual('hi');
       expect('hi'.toLower()).toEqual('hi');
+      expect('hELLo'.toLower()).toEqual('hello');
     });
 
   });
@@ -47,6 +52,7 @@ describe('String Extension', function() {
   describe('word Count', function() {
     it('should return the number of words in the string.', function() {
       expect('this is a string'.wordCount()).toEqual(4);
+      expect('this . a string '.wordCount()).toEqual(3);
     });
   });
 

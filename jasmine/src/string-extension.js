@@ -2,15 +2,13 @@
 String.prototype.hasVowels = function() {
   //Returns true if the string contains vowels.
 
-  return /[aeiou]/i.test(this) ? true : false;
+  return /[aeiou]/i.test(this);
 };
 
 String.prototype.toUpper = function() {
   //Returns the String in question but with all characters in upper cases as applicable.
 
   return this.replace(/[a-z]/g, function(letter) {
-    //   return String.fromCharCode(letter.charCodeAt(0) & ~32);
-    // });
     return String.fromCharCode(letter.charCodeAt(0) - 32);
   });
 };
@@ -32,13 +30,13 @@ String.prototype.ucFirst = function() {
 String.prototype.isQuestion = function() {
   //Return true if the string is a question (ending with a question mark).
 
-  return /\?$/.test(this) ? true : false; //debug ending with a question mark only.
+  return /\?$/.test(this);
 };
 
 String.prototype.words = function() {
   //Returns a list of the words in the string, as an Array. 
 
-  return this.replace(/\W/g, ' ').trim().split(' '); //debug this if there is a fullstoop in the middle of the string
+  return this.replace(/\W+/g, ' ').trim().split(' '); 
 };
 
 String.prototype.wordCount = function() {
@@ -57,5 +55,6 @@ String.prototype.toCurrency = function() {
 
 String.prototype.fromCurrency = function() {
   //Returns a number representation of the Currency String e.g 11,111.11 should return 11111.11
+
   return this.replace(/\,/g, '');
 };
