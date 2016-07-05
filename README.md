@@ -33,49 +33,49 @@ It returns true if the string contains vowels and false if doesnot.
 ######Example
 > 'hi this is a string'.hasVowels()      return true
 
-#####2. toUpper()
+#####2. toUpper( )
 It returns the String in question but with all characters in upper cases as applicable.
 
 ######Example
 > 'hi this is a string'.toUpper()      return 'HI THIS IS A STRING'
 
-#####3. toLower()
+#####3. toLower( )
 It returns the String in question but with all characters in lower cases as applicable.
 
 ######Example
 > 'Hi this Is A STring'.toLower()      return 'hi this is a string'
 
-#####4. ucFirst()
+#####4. ucFirst( )
 It returns the String in question but changes the First Character to an Upper case.
 
 ######Example
 > 'HI THIS is a string'.ucFirst()      return 'Hi this is a string'
 
-#####5. isQuestion()
+#####5. isQuestion( )
 It returns true if the string is a question (ending with a question mark).
 
 ######Example
 > 'hi this is a question?'.isQuestion()      return true
 
-#####6. words()
+#####6. words( )
 It returns a list of the words in the string, as an Array. 
 
 ######Example
 > 'hi this is a string'.words()      return ['hi','this','is','a','string']
 
-#####7. wordCount()
+#####7. wordCount( )
 It returns the number of words in the string. 
 
 ######Example
 > 'hi this is a string'.wordCount()     return 5
 
-#####8. toCurrency()
+#####8. toCurrency( )
 It returns a currency representation of the String e.g 11111.11 should be represented as 11,111.11.
 
 ######Example
 > '1000000'.toCurrency()      return '1,000,000'
 
-#####9. fromCurrency()
+#####9. fromCurrency( )
 It returns a number representation of the Currency String e.g 11,111.11 should return 11111.11
 
 ######Example
