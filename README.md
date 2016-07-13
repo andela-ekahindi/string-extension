@@ -83,7 +83,7 @@ It returns a list of the words in the string, as an Array.
 ```javascript
  'hi this is a string'.words()      
 ```
->   return ['hi','this','is','a','string']
+>   return ['hi', 'this', 'is', 'a', 'string']
 
 #####7. wordCount( )
 It returns the number of words in the string. 
