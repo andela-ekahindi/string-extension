@@ -9,7 +9,7 @@ String.prototype.toUpper = function() {
   //Returns the String in question but with all characters in upper cases as applicable.
 
   return this.replace(/[a-z]/g, function(letter) {
-    return String.fromCharCode(letter.charCodeAt(0) - 32);
+    return String.fromCharCode(letter.charCodeAt(0) & ~32);
   });
 };
 
@@ -17,7 +17,7 @@ String.prototype.toLower = function() {
   //Returns the String in question but with all characters in their lower cases as applicable.
 
   return this.replace(/[A-Z]/g, function(letter) {
-    return String.fromCharCode(letter.charCodeAt(0) + 32);
+    return String.fromCharCode(letter.charCodeAt(0) | 32);
   });
 };
 
@@ -47,13 +47,13 @@ String.prototype.wordCount = function() {
 
 String.prototype.toCurrency = function() {
   //Returns a currency representation of the String e.g 11111.11 should be represented as 11,111.11.
- 
-  var string = this.split('.');
-  var format_string = string[0].split( /(?=(?:\d{3})+(?:\.|$))/g ).join( "," );
-  return format_string + '.' + string[1]
+
+  var number = parseFloat(this).toFixed(2);
+  return number.split(/(?=(?:\d{3})+(?:\.|$))/g).join(",");
 };
 
 String.prototype.fromCurrency = function() {
   //Returns a number representation of the Currency String e.g 11,111.11 should return 11111.11
+
   return Number(this.replace(/\,/g, ''));
 };

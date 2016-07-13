@@ -7,6 +7,7 @@ describe('String Extension', function() {
       expect('HI'.hasVowels()).toBeTruthy();
       expect(''.hasVowels()).toBeFalsy();
       expect('?'.hasVowels()).toBeFalsy();
+      expect('bcdfg'.hasVowels()).toBeFalsy();
     });
   });
 
@@ -59,6 +60,8 @@ describe('String Extension', function() {
   describe('To Currency', function() {
     it('should return a currency representation of the string passed.', function() {
       expect('11111.11'.toCurrency()).toEqual('11,111.11');
+      expect('11111.00'.toCurrency()).toEqual('11,111.00');
+      expect('11111.00.00'.toCurrency()).toEqual('11,111.00');
     });
   });
 
