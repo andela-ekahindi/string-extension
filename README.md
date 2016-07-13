@@ -35,7 +35,10 @@ These methods donot take in any arguements.The methods for the extended string C
 It returns true if the string contains vowels and false if doesnot.
 
 ######Example
-> 'hi this is a string'.hasVowels()      return true
+```javascript
+> 'hi this is a string'.hasVowels()     
+```
+>  return true
 
 #####2. toUpper( )
 It returns the String in question but with all characters in upper cases as applicable.
