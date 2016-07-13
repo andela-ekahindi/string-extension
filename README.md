@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1ccc1a36744248d183de8290e1032f31)](https://www.codacy.com/app/esther-kahindi/string-extension?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=andela-ekahindi/string-extension&amp;utm_campaign=Badge_Grade)
 # string-extension
 Extending String Class - Checkpoint 2
 ##Introduction
