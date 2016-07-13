@@ -1,0 +1,28 @@
+{
+  "name": "string-extension",
+  "version": "1.0.0",
+  "description": "This is an extension of the string class",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-ekahindi/string-extension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andela-ekahindi/string-extension/issues"
+  },
+  "homepage": "https://github.com/andela-ekahindi/string-extension#readme",
+  "dependencies": {
+    "istanbul": "^0.4.4",
+    "jasmine": "^2.4.1",
+    "karma": "^1.1.1",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.1.0",
+    "karma-coveralls": "^1.1.2",
+    "karma-jasmine": "^1.0.2"
+  }
+}
