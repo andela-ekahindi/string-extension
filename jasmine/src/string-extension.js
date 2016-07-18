@@ -9,8 +9,7 @@ String.prototype.toUpper = function() {
   //Returns the String in question but with all characters in upper cases as applicable.
 
   return this.replace(/[a-z]/g, function(letter) {
-    // return String.fromCharCode(letter.charCodeAt(0) - 32);
-    return String.fromCharCode(letter.charCodeAt(0) & ~32);
+    return String.fromCharCode(letter.charCodeAt(0) - 32);
   });
 };
 
@@ -18,7 +17,7 @@ String.prototype.toLower = function() {
   //Returns the String in question but with all characters in their lower cases as applicable.
 
   return this.replace(/[A-Z]/g, function(letter) {
-    return String.fromCharCode(letter.charCodeAt(0) | 32);
+    return String.fromCharCode(letter.charCodeAt(0) + 32);
   });
 };
 

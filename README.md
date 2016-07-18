@@ -1,4 +1,3 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1ccc1a36744248d183de8290e1032f31)](https://www.codacy.com/app/esther-kahindi/string-extension?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=andela-ekahindi/string-extension&amp;utm_campaign=Badge_Grade)
 [![Coverage Status](https://coveralls.io/repos/github/andela-ekahindi/string-extension/badge.svg?branch=develop)](https://coveralls.io/github/andela-ekahindi/string-extension?branch=develop)
 [![Build Status](https://travis-ci.org/andela-ekahindi/string-extension.svg?branch=develop)](https://travis-ci.org/andela-ekahindi/string-extension)
 [![Issue Count](https://codeclimate.com/repos/5786082297e19b0caa0014eb/badges/b9eb614729472c0a2a71/issue_count.svg)](https://codeclimate.com/repos/5786082297e19b0caa0014eb/feed)
