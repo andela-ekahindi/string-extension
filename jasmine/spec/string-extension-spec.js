@@ -14,6 +14,7 @@ describe('String Extension', function() {
   describe('To Upper', function() {
     it('should return the string passed as all upper cases characters.', function() {
       expect('hi'.toUpper()).toEqual('HI');
+      expect('hi'.toUpper()).toEqual('HI');
       expect('HI'.toUpper()).toEqual('HI');
       expect(''.toUpper()).toEqual('');
       expect('?'.toUpper()).toEqual('?');
@@ -25,6 +26,8 @@ describe('String Extension', function() {
       expect('HI'.toLower()).toEqual('hi');
       expect('hi'.toLower()).toEqual('hi');
       expect('hELLo'.toLower()).toEqual('hello');
+      expect(''.toLower()).toEqual('');
+      expect('?'.toLower()).toEqual('?');
     });
 
   });
@@ -34,6 +37,9 @@ describe('String Extension', function() {
       expect('hi'.ucFirst()).toEqual('Hi');
       expect('Hi'.ucFirst()).toEqual('Hi');
       expect('HI'.ucFirst()).toEqual('Hi');
+      expect(''.ucFirst()).toEqual('');
+      expect('?'.ucFirst()).toEqual('?');
+      expect('?hi'.ucFirst()).toEqual('?hi');
     });
   });
 
@@ -62,6 +68,8 @@ describe('String Extension', function() {
       expect('11111.11'.toCurrency()).toEqual('11,111.11');
       expect('11111.00'.toCurrency()).toEqual('11,111.00');
       expect('11111.00.00'.toCurrency()).toEqual('11,111.00');
+      expect('hi how are you'.toCurrency()).toEqual('NaN');
+      expect('1090700'.toCurrency()).toEqual('1,090,700.00');
     });
   });
 

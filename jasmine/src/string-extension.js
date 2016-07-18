@@ -9,6 +9,7 @@ String.prototype.toUpper = function() {
   //Returns the String in question but with all characters in upper cases as applicable.
 
   return this.replace(/[a-z]/g, function(letter) {
+    // return String.fromCharCode(letter.charCodeAt(0) - 32);
     return String.fromCharCode(letter.charCodeAt(0) & ~32);
   });
 };
@@ -24,7 +25,7 @@ String.prototype.toLower = function() {
 String.prototype.ucFirst = function() {
   //Returns the String in question but changes the First Character to an Upper case.
 
-  return this[0].toUpper() + this.slice(1).toLower();
+  return this.length ?  this[0].toUpper() + this.slice(1).toLower() : '';
 };
 
 String.prototype.isQuestion = function() {
