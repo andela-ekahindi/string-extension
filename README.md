@@ -5,7 +5,7 @@
 # string-extension
 Extending String Class - Checkpoint 2
 ##Introduction
-This is to extend the Inbuilt String Class in Javascript to to neat tricks.
+This is to extend the Inbuilt String Class in Javascript to do neat tricks.
 
 These include:
 
