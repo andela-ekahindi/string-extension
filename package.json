@@ -24,5 +24,9 @@
     "karma-coverage": "^1.1.0",
     "karma-coveralls": "^1.1.2",
     "karma-jasmine": "^1.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.1.1",
+    "eslint-plugin-react": "^5.2.2"
   }
 }

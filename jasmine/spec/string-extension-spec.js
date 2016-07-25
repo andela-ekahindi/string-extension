@@ -47,12 +47,14 @@ describe('String Extension', function() {
     it('should return true if the string is a question (ending with a question mark).', function() {
       expect('hi?'.isQuestion()).toBeTruthy();
       expect('hi? am good'.isQuestion()).toBeFalsy();
+      expect('?'.isQuestion()).toBeTruthy();
     });
   });
 
   describe('Words', function() {
     it('should return a list of the words in the string, as an Array. ', function() {
       expect('this is a string.'.words()).toEqual(['this', 'is', 'a', 'string']);
+      expect('%%$%^@$#^^^&* a string.'.words()).toEqual(['a', 'string']);
     });
   });
 
