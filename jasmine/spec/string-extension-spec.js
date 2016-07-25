@@ -55,7 +55,6 @@ describe('String Extension', function() {
     it('should return a list of the words in the string, as an Array. ', function() {
       expect('this is a string.'.words()).toEqual(['this', 'is', 'a', 'string']);
       expect('%%$%^@$#^^^&* a string.'.words()).toEqual(['a', 'string']);
-      // test that have alot
     });
   });
 
