@@ -1,7 +1,6 @@
 'use strict';
 String.prototype.hasVowels = function() {
   //Returns true if the string contains vowels.
-
   return /[aeiou]/i.test(this);
 };
 
@@ -49,7 +48,7 @@ String.prototype.toCurrency = function() {
   //Returns a currency representation of the String e.g 11111.11 should be represented as 11,111.11.
 
   var number = parseFloat(this).toFixed(2);
-  return number.split(/(?=(?:\d{3})+(?:\.|$))/g).join(",");
+  return number.split(/(?=(?:\d{3})+(?:\.|$))/g).join(',');
 };
 
 String.prototype.fromCurrency = function() {
